@@ -1,0 +1,193 @@
+a {
+  display: inline-block;
+}
+.car-merchants {
+  background: white;
+  margin-top: 1rem;
+  border-radius: 10px;
+  &-title {
+    line-height: 30px;
+    padding: 1rem 0;
+  }
+  &-icon {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    &X {
+      display: inline-block;
+      margin-left: 1rem;
+    }
+  }
+  &-check {
+    float: left;
+    margin-left: 1rem;
+  }
+  &-name {
+    margin-left: 1rem;
+    font-size: 14px;
+    font-weight: 400;
+    color: #353535;
+    &:after {
+      content: "\e636";
+    }
+  }
+}
+.car-merchants- {
+  &goods {
+    margin-left: 4.5rem;
+    &X {
+      .car-merchants-check {
+        line-height: 10rem;
+      }
+    }
+    &-info-img {
+      display: inline-block;
+      margin: 0.5rem 0;
+      height: 8rem;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        height: 100%;
+      }
+    }
+    &-showX {
+      padding-bottom: 1rem;
+      margin: 1rem 0.5rem 1rem;
+      position: relative;
+      border-bottom: 1px solid rgba(53, 53, 53,.1);
+    }
+    &-info {
+
+    }
+    &-infoX {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 12px;
+      margin-left: 10px;
+    }
+    &-tag {
+      display: inline-block;
+      font-size: 10px;
+      vertical-align: middle;
+    }
+    &-minimun {
+      margin-top: 2rem;
+      color: #999;
+      font-size: 13px;
+      &:before {
+        content: "≥";
+        vertical-align: middle;
+      }
+      &:after {
+        content: "件";
+      }
+    }
+    &-price {
+      &:before {
+        content: "￥";
+      }
+    }
+    &-price {
+      color: #f56456;
+    }
+    &-priceX {
+      font-size: 16px;
+      margin-top: 1rem;
+    }
+    &-operation {
+      display: flex;
+      overflow: hidden;
+      width: 8rem;
+      justify-content: space-between;
+      &X {
+        display: inline-block;
+        font-size: 20px;
+        position: absolute;
+        margin-top: -0.5rem;
+        right: 0;
+      }
+      .iconfont {
+        font-size: 23px;
+        color: #f56456;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.car-merchants-total {
+  &-priceX {
+    padding: 1rem 0;
+    font-size: 16px;
+    text-align: right;
+  }
+  &-num {
+    &:before {
+      content: "共";
+    }
+    &:after {
+      content: "件";
+    }
+  }
+  &-price {
+    color: #f56456;
+    &:before {
+      content: "￥";
+    }
+    padding: 0 1rem;
+    border-left: 1px solid rgba(53, 53, 53,.1);
+    margin-left: 0.5rem;
+  }
+}
+.car-operateX {
+  width: 100%;
+  position: fixed;
+  bottom: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  background: white;
+  color: #999;
+}
+.car-operate {
+  padding: 0 1rem;
+  overflow: hidden;
+}
+.car-operate-right {
+  float: right;
+}
+.car-operate-price {
+  font-size: 22px;
+  font-weight: 600;
+  color: #f56456;
+  vertical-align: middle;
+  &:before {
+    content: "￥";
+  }
+}
+[class|="car-operate-but"] {
+  margin-left: 20px;
+  padding: 10px 18px;
+  background: #f56456;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  &.car-operate-but{
+    &-1,&-2 {
+      padding: 8px 14px;
+      margin-left: 10px;
+      background: white;
+      border: 1px solid;
+    }
+    &-1 {
+      color: #ffb254;
+      border-color: #ffb254;
+    }
+    &-2 {
+      color: #de2434;
+      border-color: #de2434;
+    }
+  }
+}
+.car-operate-clean {
+  cursor: pointer;
+  color: #353535;
+}

@@ -1,0 +1,148 @@
+.el-tab-pane {
+  width: 50%;
+}
+.login-head {
+  background: #1d9c7d;
+  height: 12rem;
+  &-register {
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    color: white;
+    line-height: 50px;
+    margin-right: 10px;
+  }
+  &-home {
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: 12px;
+    width: 25px;
+    height: 21px;
+    content: url("../images/index_icon.png");
+  }
+  &-img {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    left: 0;
+    right: 0;
+    margin: 4.5rem auto 0;
+  }
+}
+.login-options {
+  font-size: 16px;
+  cursor: pointer;
+}
+[class|="login-input"] {
+  font-size: 14px;
+  white-space: nowrap;
+  position: relative;
+  >input {
+    display: block;
+    width: 50%;
+    line-height: 3rem;
+    padding: 1rem 0;
+    outline: none;
+    border: 0;
+    margin-left: 10rem;
+  }
+  >label {
+    float: left;
+    margin-left: 1rem;
+    line-height: 3rem;
+    padding: 1rem 0;
+  }
+  overflow: hidden;
+}
+.input-reset {
+  color: gray;
+  position: absolute;
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0.3;
+  top: 1rem;
+  right: 2rem;
+}
+.el-tab-pane {
+  width: 100%;
+  background: white;
+}
+.input-warning {
+  margin-left: 10rem;
+  color: red;
+  font-size: 14px;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: url("../images/form-control-error-icon.png");
+    background-size: 100%;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+}
+.login-funX {
+  margin: 2rem 0;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 14px;
+  .cs-iconfont {
+    margin-right: 5px;
+  }
+}
+.login-fun-auto-login {
+  background: #f56456;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  &:before {
+    display: block;
+    content: "";
+    background: url("../images/cart_icon_con.png");
+    background-size: 250%;
+    background-position: -23px 0;
+    height: 20px;
+    width: 20px;
+  }
+  &.current {
+    background: transparent;
+    &:before {
+      background-position: 0 0;
+    }
+  }
+}
+.login-submit {
+  width: 90%;
+  background: #f56456;
+  margin: auto;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1ex;
+}
+.login-other-line {
+  text-align: center;
+  border-top: 1px dashed #e3e5e9;
+  margin-top: 3rem;
+  font-size: 14px;
+  position: relative;
+  color: #666;
+   &-text {
+     position: relative;
+     margin: auto;
+     top: -1rem;
+     background: #f8f8f8;
+     padding: 0 1rem;
+  }
+}
+.login-other-qqX {
+  text-align: center;
+}
+.login-other-qq {
+  width: 5rem;
+  height: 5rem;
+}
